@@ -1,0 +1,36 @@
+<!doctype html>
+<html class="no-js">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>Test Plugin PimpMyInput</title>
+		<meta name="description" content="">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="pimpMyInput.css">
+		<script src="jquery-1.10.2.min.js"></script>
+		<script src="jquery.color-2.1.2.min.js"></script>
+		<script src="jquery.caret.js"></script>
+		<script src="pimpMyInput.js"></script>
+	</head>
+	<body>
+		<div id="container">
+			<header id="header">
+			</header>
+			<section id="content">
+				<div id="c1" class="pimpMyInput_container">
+					<input id="myInput">
+				</div>
+				<div id="c2" class="pimpMyInput_container">
+					<input id="myInput2">
+				</div>
+			</section>
+			<!--[if lt IE 7]>
+			<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+			<![endif]-->
+		</div>
+	</body>
+	<script type="text/javascript">
+		$('#myInput').pimpMyInput('^(?:\\s)*(@[A-Za-z0-9_]+)$');
+		$('#myInput').pimpMyInput('^(?:\\s)*(@[A-Za-z0-9_]+)$');
+		$('#myInput2').pimpMyInput('^(?:\\s)*(@[A-Za-z0-9_]+)$');
+	</script>
+</html>
